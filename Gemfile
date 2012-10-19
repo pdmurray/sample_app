@@ -4,6 +4,7 @@ gem 'rails', '3.2.6'
 gem 'pg', '0.12.2'
 gem 'bootstrap-sass', '2.0.0'
 gem 'bcrypt-ruby', '3.0.1'
+gem 'faker', '1.0.1'
 
 group :development, :test do
   gem 'rspec-rails', '2.10.0'
@@ -19,12 +20,13 @@ group :assets do
   gem 'uglifier', '1.2.3'
 end
 
-gem 'jquery-rails', '2.0.0'
+gem 'jquery-rails', '2.0.2'
 
 group :test do
   gem 'rspec-rails', '2.10.0'
   gem 'capybara', '1.1.2'
-  gem 'rb-fsevent', '0.4.3.1', :require => false
+  #gem 'rb-fsevent', '0.4.3.1', :require => false
+  gem 'rb-fsevent', '~> 0.9.1', :require => false
   gem 'growl', '1.0.3'
   gem 'guard-spork', '0.3.2'
   gem 'spork', '0.9.0'
